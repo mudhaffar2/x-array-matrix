@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "name": "x-array-matrix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/script.js",
+  "scripts": {
+    "test": "mocha",
+    "prebuild": "jshint src/script.js && mkdirp docs && cp src/index.html docs/",
+    "build": "browserify src/script.js -o docs/bundle.js",
+    "postbuild": "uglifyjs docs/bundle.js -o docs/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mudhaffar2/x-array-matrix.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mudhaffar2/x-array-matrix/issues"
+  },
+  "homepage": "https://github.com/mudhaffar2/x-array-matrix#readme",
+  "devDependencies": {
+    "mkdirp": "latest",
+    "cp": "latest",
+    "browserify": "latest",
+    "uglify-js": "latest",
+    "jshint": "latest",
+    "mocha": "latest",
+    "expect.js": "latest"
+  }
+}
