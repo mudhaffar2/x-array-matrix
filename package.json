@@ -3,7 +3,7 @@
   "name": "x-array-matrix",
   "version": "1.0.0",
   "description": "",
-  "main": "src/script.js",
+  "main": "src/lib.js",
   "scripts": {
     "test:dev": "mocha -w",
     "test": "mocha",
