@@ -5,6 +5,7 @@
   "description": "",
   "main": "src/script.js",
   "scripts": {
+    "test:dev": "mocha -w",
     "test": "mocha",
     "prebuild": "jshint src/script.js && mkdirp docs && cp src/index.html docs/",
     "build": "browserify src/script.js -o docs/bundle.js",
